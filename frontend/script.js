@@ -81,10 +81,11 @@ submitBtn.addEventListener("click", async () => {
   formData.append("summary_length", summaryLength.value);
 
   try {
-    const response = await fetch("http://127.0.0.1:8000/upload/", {
-      method: "POST",
-      body: formData,
-    });
+    const response = await fetch("/upload/", {
+  method: "POST",
+  body: formData,
+});
+
 
     const data = await response.json();
     console.log("Backend JSON:", data);

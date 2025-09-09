@@ -4,7 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document Summarizer</title>
-  <link rel="stylesheet" href="style.css">
+  <!-- ✅ Fixed: load from /static/ -->
+  <link rel="stylesheet" href="/static/style.css">
 </head>
 <body>
   <div class="container">
@@ -44,6 +45,7 @@
     <div id="error-msg"></div>
   </div>
 
-  <script src="script.js?v=4"></script>
+  <!-- ✅ Fixed: load from /static/ -->
+  <script src="/static/script.js"></script>
 </body>
 </html>
