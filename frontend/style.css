@@ -1,0 +1,147 @@
+/* General body styles */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(135deg, #f0f2f5, #dbe9ff);
+  margin: 0;
+  padding: 0;
+}
+
+/* Main container */
+.container {
+  width: 80%;
+  max-width: 800px;
+  margin: 40px auto;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading */
+h1 {
+  text-align: center;
+  color: #007bff;
+  margin-bottom: 30px;
+}
+
+/* Drag-and-drop area */
+.drop-zone {
+  border: 2px dashed #007bff;
+  border-radius: 12px;
+  padding: 40px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+  margin-bottom: 20px;
+  font-weight: bold;
+  position: relative;
+}
+.drop-zone:hover {
+  background-color: #e6f0ff;
+}
+.drop-zone input {
+  display: none;
+}
+
+/* Dropdown */
+label {
+  font-weight: bold;
+  margin-bottom: 6px;
+  display: block;
+}
+select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+}
+
+/* Button */
+button {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 7px;
+  border: none;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+}
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Download button */
+#download-btn {
+  margin-top: 15px;
+  background-color: #28a745;
+}
+#download-btn:hover {
+  background-color: #218838;
+}
+
+/* Results */
+#results {
+  margin-top: 25px;
+}
+#results h3 {
+  margin-bottom: 8px;
+  color: #007bff;
+}
+#file-name {
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+#extracted-text {
+  border: 1px solid #ddd;
+  background-color: #f4f6f8; /* Light gray */
+  padding: 15px;
+  border-radius: 7px;
+  max-height: 200px;
+  overflow-y: auto;
+  white-space: pre-wrap;
+  margin-bottom: 20px;
+}
+
+#summary {
+  border: 1px solid #ddd;
+  background-color: #f9fbff; /* light professional background */
+  padding: 15px 20px;
+  border-radius: 20px; /* oval effect */
+  max-height: 200px;
+  overflow-y: auto;
+  white-space: pre-wrap;
+  margin-bottom: 20px;
+
+  /* subtle shadow for professional look */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+/* Spinner */
+.spinner {
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #007bff;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  animation: spin 1s linear infinite;
+  margin: 10px auto;
+}
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.highlight {
+  display: inline-block;        /* prevents odd wrapping when padding is added */
+  padding: 0 6px;               /* breathing room around the word */
+  margin: 0 2px;                /* small gap from surrounding text */
+  background-color: #fff3b0;    /* soft, professional highlight (yellow-beige) */
+  color: #0b1220;               /* dark text for good contrast */
+  font-weight: 600;             /* slightly stronger than body text */
+  border-radius: 6px;           /* pill/oval feel */
+  transition: background-color 0.18s ease, transform 0.12s ease;
+  line-height: 1.4;
+  white-space: normal;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document Summarizer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>📄 Document Summarizer</h1>
+
+    <!-- Drag-and-Drop Area -->
+    <div id="drop-zone" class="drop-zone">
+      <p>Drag & drop a PDF/image here or click to select</p>
+      <input type="file" id="file-input" accept=".pdf,image/*">
+    </div>
+
+    <!-- Summary Length Selection -->
+    <label for="summary-length">Summary Length:</label>
+    <select id="summary-length">
+      <option value="short">Short</option>
+      <option value="medium" selected>Medium</option>
+      <option value="long">Long</option>
+    </select>
+
+    <!-- Submit Button -->
+    <button id="submit-btn">Summarize</button>
+
+    <!-- Results -->
+    <div id="results">
+      <h3>📂 Filename:</h3>
+      <p id="file-name">No file selected</p>
+
+      <h3>Extracted Text (Preview):</h3>
+      <div id="extracted-text"></div>
+
+      <h3>✨Summary:</h3>
+      <div id="summary"></div>
+      <button id="download-btn" style="display:none;">⬇ Download Summary</button>
+    </div>
+
+    <!-- Error Message -->
+    <div id="error-msg"></div>
+  </div>
+
+  <script src="script.js?v=4"></script>
+</body>
+</html>
