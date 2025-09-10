@@ -1,7 +1,23 @@
-venv/
+# Python
 __pycache__/
 *.pyc
+*.pyo
+*.pyd
+*.log
+
+# Virtual environment
+venv/
+
+# Environment files (secrets)
 .env
 .env.*
+
+# Local app data
+uploads/
+
+# System files
 .DS_Store
+Thumbs.db
+
+# (Optional) Node-related (if ever used)
 node_modules/
